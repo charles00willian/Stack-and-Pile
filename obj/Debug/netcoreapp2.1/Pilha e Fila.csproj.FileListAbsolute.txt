@@ -1,0 +1,11 @@
+C:\Users\charl\Documents\Repos\Pilha e Fila\obj\Debug\netcoreapp2.1\Pilha e Fila.csprojAssemblyReference.cache
+C:\Users\charl\Documents\Repos\Pilha e Fila\obj\Debug\netcoreapp2.1\Pilha e Fila.csproj.CoreCompileInputs.cache
+C:\Users\charl\Documents\Repos\Pilha e Fila\obj\Debug\netcoreapp2.1\Pilha e Fila.AssemblyInfoInputs.cache
+C:\Users\charl\Documents\Repos\Pilha e Fila\obj\Debug\netcoreapp2.1\Pilha e Fila.AssemblyInfo.cs
+C:\Users\charl\Documents\Repos\Pilha e Fila\bin\Debug\netcoreapp2.1\Pilha e Fila.deps.json
+C:\Users\charl\Documents\Repos\Pilha e Fila\bin\Debug\netcoreapp2.1\Pilha e Fila.runtimeconfig.json
+C:\Users\charl\Documents\Repos\Pilha e Fila\bin\Debug\netcoreapp2.1\Pilha e Fila.runtimeconfig.dev.json
+C:\Users\charl\Documents\Repos\Pilha e Fila\bin\Debug\netcoreapp2.1\Pilha e Fila.dll
+C:\Users\charl\Documents\Repos\Pilha e Fila\bin\Debug\netcoreapp2.1\Pilha e Fila.pdb
+C:\Users\charl\Documents\Repos\Pilha e Fila\obj\Debug\netcoreapp2.1\Pilha e Fila.dll
+C:\Users\charl\Documents\Repos\Pilha e Fila\obj\Debug\netcoreapp2.1\Pilha e Fila.pdb
