@@ -35,18 +35,19 @@ namespace Pilha_e_Fila
         public void empilhar (int x)
         {
             Elemento meuElemento = new Elemento();
-            if (!consultar(x))
+            if (!pesquisar(x))
             {
                 meuElemento.numero = x;
                 meuElemento.proximo = topo;
                 topo = meuElemento;
+                tamanho++;
             }
             else
             {
                 Console.WriteLine("Elemento já está na pilha!");
             }
         }
-        public bool consultar (int x)
+        public bool pesquisar (int x)
         {
             Elemento aux = topo;
 
@@ -63,7 +64,7 @@ namespace Pilha_e_Fila
                 return false;
             }
         }
-        public bool consultar (Elemento aux, int x)
+        public bool pesquisar (Elemento aux, int x)
         {
             if (aux == null)
             {
@@ -75,8 +76,17 @@ namespace Pilha_e_Fila
             }
             else
             {
-                return (consultar(aux.proximo, x));
+                return (pesquisar(aux.proximo, x));
             }
+        }
+        public void esvaziar()
+        {
+            topo = null;
+            tamanho = 0;
+        }
+        public bool vazio()
+        {
+            return (topo == null);
         }
         public Elemento desempilhar()
         {
@@ -89,9 +99,43 @@ namespace Pilha_e_Fila
             else
             {
                 topo = topo.proximo;
+                tamanho--;
                 return (aux);
             }
         }
+        public int maiorTopo(Elemento topo, Elemento el, int cont)
+        {
+            if (el == null)
+            {
+                return cont;
+            }
+            else
+            {
+                if (el.numero > topo.numero)
+                {
+                    return (maiorTopo(topo, el.proximo, cont + 1));
+                }
+                else
+                {
+                    return (maiorTopo(topo, el.proximo, cont));
+                }
+            }
+        }
+        public int maiorTopo()
+        {
+            Elemento aux = topo;
+            int cont = 0;
+            while (aux != null)
+            {
+                if (aux.numero > topo.numero)
+                {
+                    cont++;
+                }
+                aux = aux.proximo;
+            }
+            return cont;
+        }
+
     }
 
 
@@ -190,10 +234,6 @@ namespace Pilha_e_Fila
         {
             if (el != null)
             {
-                Console.WriteLine("Fim da lista");
-            }
-            else
-            {
                 Console.WriteLine(el.numero);
                 exibir(el.proximo);
             }
@@ -252,7 +292,7 @@ namespace Pilha_e_Fila
             }
             else
             {
-                if (el.numero > inicio.numero)
+                if (el.numero > fim.numero)
                 {
                     return (maiorFim(fim, el.proximo, cont + 1));
                 }
